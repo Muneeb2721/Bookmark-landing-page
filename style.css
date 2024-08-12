@@ -1,0 +1,951 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+nav {
+    max-width: 100%;
+}
+
+.nav-div {  
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+#icon-hamburger {
+    width: 30px;
+    cursor: pointer;
+    height: 25px;
+}
+
+.icon-hamburger-display {
+    /* background-color: hsl(229, 31%, 21%, 0.9); */
+    /* width: 100%; */
+    max-width: 374.5px;
+    height: 148vw;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.icon-hamburger-display ul {
+    display: none;
+}
+
+.more-info-btn-one-click button{           
+    padding: 12px 24px;
+    background-color: hsl(231, 69%, 60%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 40px;
+}
+
+
+#hero-illustration {
+    display: grid;
+    padding: 40px 0px;
+    height: auto;
+    margin-bottom: -70px;
+}
+
+#illustration-hero {
+    width: 100%;
+    max-width: 358px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#bg {
+    width: 80%;
+    height: 168px;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 100px 0 0 100px;
+    position: relative;
+    bottom: 150px;
+    left: 20%;
+    z-index: -1;
+}
+
+.btn-two {
+    text-align: center;
+    padding: 0 25px;
+}
+
+.btn-two h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.btn-two p {
+    margin-bottom: 30px;
+}
+
+.btn-two button {
+    padding: 12px 18px;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    font-weight: 500;
+    margin: 0 5px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-two button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+hr {
+   width: 80%;
+   height: 1px;
+   background-color: hsl(229, 8%, 60%);
+   margin: 30px auto;
+}
+
+.features li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    list-style-type: none;
+    text-align: center;
+}
+
+.features-illustration {
+    display: grid;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+#illustration-features-tab-1 {
+    width: 100%;
+    max-width: 335px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#bg-1 {
+    width: 80%;
+    height: 200px;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 0 100px 100px 0;
+    position: relative;
+    bottom: 150px;
+    right: 20%;
+    z-index: -1;
+}
+
+.features-illustration h1 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.features-illustration p {
+    margin-top: 20px;
+}
+
+.chrome {
+    margin-top: 80px;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.chrome h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.chrome p {
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 280px;
+    padding: 20px;
+    border: 0px solid black;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+.card img {
+    width: 65px;
+    margin-bottom: 25px;
+}
+
+.card .bg-dots {
+    width: 100%;
+    margin-top: 100px;  
+}
+
+.card button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+.frequently-asked-questions {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.frequently-asked-questions h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.frequently-asked-questions p {
+    margin-bottom: 30px;
+}
+
+dl.faq button {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+dl.faq button:hover,
+dl.faq button:focus {
+    color: hsl(0, 94%, 66%);
+}
+
+dl.faq .desc {
+    padding: 15px 0;
+    display: none;
+    text-align: left;
+}
+
+.more-info-btn {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.more-info-btn button {
+    padding: 12px 24px;
+    background-color: hsl(231, 69%, 60%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-info-btn button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+.bg-blue {
+    background-color: hsl(231, 69%, 60%);
+    padding: 60px 25px;
+    text-align: center;
+    color: white;
+}
+
+.bg-blue span {
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+
+.bg-blue h1 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+}
+
+.bg-bookmark {
+    background-color: hsl(229, 31%, 21%);
+    padding: 40px 25px;
+    text-align: center;
+    color: white;
+}
+
+#bookmark-logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.bg-bookmark ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.bg-bookmark ul li {
+    margin-bottom: 20px;
+}
+
+.bg-bookmark ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bg-bookmark ul li a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.social-icons {
+    margin-bottom: 30px;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 0.8rem;
+    color: hsl(229, 8%, 60%);
+}
+
+.attribution a {
+    color: hsl(0, 94%, 66%);
+    text-decoration: none;
+}
+
+a {
+    text-decoration-line: none;
+    color: blue;
+}
+/* 
+@media screen and (max-width: 375px) {
+    .login-btn {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 425px) {
+    .login-btn {
+        display: none;
+    }
+}
+
+/* Media query for tablets (768px and up) */
+@media screen and (min-width: 768px) {
+    .nav-div {
+        padding: 40px 50px;
+    }
+    .logo-1 {
+        display: none;
+    }
+    #icon-hamburger {
+        display: none;
+    }
+
+    .nav-div ul {
+        display: flex;
+        list-style-type: none;
+        font-weight: 600;
+    }
+
+    .nav-div ul a {
+        text-decoration-line: none;
+        color: black;
+    }
+
+    .icon-hamburger-display {
+    /* background-color: hsl(229, 31%, 21%, 0.9); */
+    /* width: 100%; */
+    max-width: 374.5px;
+    height: 148vw;
+    position: absolute;
+    right: 55px;
+    top: 35px;
+} 
+
+    .login-btn {
+        padding: 12px 32px;
+        margin: 0px;
+        background-color: red;
+        color: white;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        bottom: 28px;
+        left: 240px;
+    }
+
+    .logo {
+        width: 12em;
+        height: 2em;
+        position: relative;
+        top: 5px;
+    }
+    .nav-div ul li {
+        margin: 10px 32px 0px 10px;
+        position: relative;
+        right: 100px
+    }
+    .more-info-btn-one-click {
+        display: none;
+    }
+
+    #hero-illustration {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 60px 0px;
+    }
+
+    #illustration-hero {
+        width: 70%;
+        max-width: 480px;
+    }
+
+    #bg {
+        width: 45%;
+        height: 265px;
+        top: 45px;
+        left: 62.5%
+    }
+
+    .btn-two {
+        text-align: left;
+        padding: 0 50px;
+    }
+
+    .btn-two h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .btn-two p {
+        text-align: center;
+        width: 80%;
+        margin: 30px auto
+    }
+
+    .btn-two button {
+        padding: 12px 18px;
+        border-radius: 5px;
+        background-color: hsl(231, 69%, 60%);
+        color: white;
+        font-weight: 500;
+        margin: 0 -115px 30px 160px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .features ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .features-illustration {
+        display: grid;
+        align-items: center;
+        padding: 80px 50px;
+    }
+
+    #illustration-features-tab-1 {
+        width: 70%;
+        max-width: 480px;
+        height: auto;    
+        margin: 0;
+    }
+
+    .features-illustration h1 {
+        margin-top: -135px;
+        font-size: 1.5rem;
+        margin-bottom: 30px
+    }
+
+    .features-illustration p {
+        margin: -15px auto;
+        width: 80%;
+    }
+
+    #bg-1 {
+        width: 50%;
+        max-width: 334px;
+        height: 233px;
+        bottom: 168px;
+        right: 50px;
+    }
+
+    .chrome {
+        margin-top: 5px;
+    }
+    .chrome h1 {
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+    }
+    .chrome p {
+        margin: 0 auto 30px;
+        width: 80%;
+    }
+
+    .card .bg-dots {
+        width: 100%;
+        margin-top: 100px;  
+    }
+
+    .chrome .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(45.33% - 0px);
+        margin: 70px auto;
+    }
+
+    .card button {
+        padding: 10px 20px;
+        margin: 10px 0 21px 0px;
+        border-radius: 5px;
+        background-color: hsl(231, 69%, 60%);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .card img {
+        margin-bottom: 25px;
+    }
+    .frequently-asked-questions {
+        padding: 60px 50px;
+    }
+
+    .frequently-asked-questions p {
+        margin: 0 auto 30px;
+        width: 80%;
+    }
+
+    dl.faq {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .bg-blue form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #email {
+        width: 300px;
+        margin: 0 10px 0 0;
+    }
+
+    #btn {
+        width: auto;
+    }
+}
+
+
+/* Media query for desktops (1024px and up) */
+@media screen and (min-width: 1024px) {
+    .nav-div {
+        padding: 40px 100px;
+    }
+
+    .logo-1 {
+        display: none;
+    }
+
+    .nav-div ul {
+        display: flex;
+        list-style-type: none;
+        font-weight: 600;
+    }
+
+    .nav-div ul a {
+        text-decoration-line: none;
+        color: black;
+    } 
+
+    .login-btn {
+        padding: 12px 32px;
+        margin: 0px;
+        background-color: red;
+        color: white;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        bottom: 28px;
+        left: 240px;
+    }
+
+    #bg {
+        width: 45%;
+        height: 265px;
+        top: 45px;
+        left: 62.3%;
+    }
+
+    .logo {
+            width: 12em;
+            height: 2em;
+            position: relative;
+            top: 5px;
+    }
+    .nav-div ul li {
+        margin: 10px 32px 0px 10px;
+        position: relative;
+        right: 100px
+    }
+
+    #icon-hamburger {
+        display: none;
+    }
+
+    #hero-illustration {
+        padding: 80px 67px;
+    }
+
+    .btn-two {
+        width: 52.8%;
+        position: relative;
+        bottom: 390px;
+    }
+
+    .btn-two h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-two p {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .btn-two button {
+        margin: 0 15px 30px 35px;
+    }
+
+    .features {
+        width: 70%;
+        position: relative;
+        bottom: 288px;
+        left: 170px;
+    }
+
+    hr {
+        display: none;
+    }
+    
+    ol {
+        display: flex;
+    }
+
+    .features li {
+        width: 40vh;
+        margin-top: 10px;
+        margin-right: 9px;
+        margin-bottom: 10px;
+        padding: 1px 1px 1px 17px;
+    }
+
+    .features-link {
+        border-radius: 5px;
+        background-color: hsl(231, 69%, 60%);
+        color: white;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-right: 80px;
+        margin-left: -60px;
+    }
+
+    .features-illustration {
+        padding: 0px 0px 0px 50px;
+        position: relative;
+        bottom: 145px;
+    }
+
+    .features-illustration h1 {
+        font-size: 1.74rem;
+    }
+
+    .one-click {
+        width: 37%;
+        position: relative;
+        bottom: 345px;
+        left: 530px;
+    }
+    .one-click h1{
+        margin-bottom: 50px;
+        
+    }
+    
+    .one-click p{
+        text-align: justify;
+    }
+
+    .more-info-btn-one-click button{           
+        padding: 12px 24px;
+        background-color: hsl(231, 69%, 60%);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        position: relative;
+        right: 86px;
+        top: 40px;
+    }
+
+    .chrome {
+        padding: 100px;
+        margin-top: -338px;
+    }
+
+    .chrome p {
+        margin: 0 auto 30px;
+        width: 55%;
+    }
+
+    .chrome section {
+        display: inline-block;
+    }
+
+    .card {
+        width: 260px;
+        height: 340px;
+        padding: 0px;
+        margin: 30px 5px auto;
+    }
+    
+    .card img {
+        width: 45px;
+        height: 45px;
+        margin: 20px auto;
+    }
+
+    .card h1 {
+        margin-top: -8px;
+    }
+    
+    
+    .card .bg-dots {
+        width: 100%;
+        margin-top: 75px;
+        height: 1%;
+    }
+    
+    .second-card {
+        position: relative;
+        top: 30px;
+    }
+
+    .third-card {
+        position: relative;
+        top: 60px;
+    }
+    
+    .card button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: hsl(231, 69%, 60%);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .card button:hover {
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+
+    .frequently-asked-questions {
+        padding: 100px;
+    }
+
+    .frequently-asked-questions p {
+        width: 52%;
+    }
+
+    dl.faq {
+        max-width: 600px;
+    }
+
+    .bg-blue {
+        padding: 80px 100px;
+    }
+
+    .bg-bookmark {
+        padding: 75px;
+        height: 18vw;
+    }
+
+    #bookmark-logo {
+        width: 150px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        position: relative;
+        right: 85px;
+    }
+
+    .bg-bookmark ul {
+        display: inline-flex;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        position: relative;
+        right: 45px;
+        bottom: 6.6px;
+    }
+
+    .bg-bookmark ul li {
+        margin-right: 50px;
+    }
+
+    .bg-bookmark span img {
+        margin-right: 30px;
+        position: relative;
+        left: 100px;
+    }
+
+    .attribution {
+        font-size: 0.8rem;
+        color: hsl(229, 8%, 60%);
+    }
+    
+    .attribution .last-link {
+        color: hsl(0, 94%, 66%);
+        text-decoration: none;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: hsl(229, 31%, 21%);
+    }
+}
+
+
+/* Media query for large desktops (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .nav-div,
+    #hero-illustration,
+    .btn-two,
+    .features-illustration,
+    .chrome,
+    .frequently-asked-questions,
+    .bg-blue,
+    .bg-bookmark {
+        padding-left: 150px;
+        padding-right: 91px;
+    }
+
+    .logo-1 {
+        display: none;
+    }
+    .btn-two h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-two p {
+        width: 75%;
+        text-align: justify;
+    }
+
+    .btn-two button {
+        margin: 0 0px 30px 68px;
+    }
+
+    .features li {
+        width: 40vh;
+        margin-top: 10px;
+        margin-right: 17px;
+        margin-bottom: 10px;
+        margin-left: 28px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #bg-1 {
+        width: 50%;
+        max-width: 500px;
+        height: 233px;
+        bottom: 168px;
+        right: 150px;
+    }
+
+    .features-illustration h1 {
+        font-size: 2.14rem;
+    }
+
+    dl.faq button {
+        font-weight: 700;
+    }
+
+    dl.faq {
+        max-width: 1000px;
+    }
+
+    .bg-bookmark {
+        padding: 75px;
+        height: 11vw;
+    }
+}
